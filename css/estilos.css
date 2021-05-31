@@ -56,3 +56,9 @@ body {
 .senyor-molde {
   display: none;
 }
+.iconocheck {
+  display: block;
+}
+.imagenVueltas {
+  transform: scaleX(-1);
+}
