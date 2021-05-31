@@ -16,4 +16,7 @@ for (const { nombre, foto, profesion, estado, twitter } of senyores) {
 
   const senyorProfesion = senyorElemento.querySelector(".profesionSenyor");
   senyorProfesion.textContent = profesion;
+
+  const senyorEstado = senyorElemento.querySelector(".estadoSenyor");
+  senyorProfesion.textContent = estado;
 }
