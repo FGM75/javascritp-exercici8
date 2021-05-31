@@ -2,7 +2,7 @@ import { senyores } from "../datos/senyores.js";
 
 const principal = document.querySelector(".principal");
 
-for (const { nombre, foto } of senyores) {
+for (const { nombre, foto, profesion, estado, twitter } of senyores) {
   const senyorElemento = document
     .querySelector(".senyor-molde")
     .cloneNode(true);
@@ -13,4 +13,7 @@ for (const { nombre, foto } of senyores) {
   imagen.src = `img/${foto}`;
 
   principal.append(senyorElemento);
+
+  const senyorProfesion = senyorElemento.querySelector(".profesionSenyor");
+  senyorProfesion.textContent = profesion;
 }
